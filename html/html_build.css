@@ -1,0 +1,166 @@
+body{
+	padding: 0;
+	margin:100px 0 0 0;
+	width: 100%;
+	height: 300%;
+	background-color: rgb(230,230,230);
+}
+
+html{
+	padding: 0;
+	margin: 0;
+	height: 800px;
+	width: 100%;
+	background-color: rgb(230,230,230);
+}
+
+/*header*/
+
+header{
+	position: fixed;
+	top: 0;
+	width: 10%;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+header h1 {
+	margin: 0;
+	padding:0; 
+}
+
+header h1 #WAB_logo{
+	display: block;
+	transform:rotate(-45deg);
+	background-color:#00BFFF;
+	box-shadow: 0 1px 1px 1px;
+}
+
+#white_board{
+	width: 95%;
+	height: 200%;
+	margin: 100px auto;
+	box-shadow: 0 1px 1px 1px;
+	background-color: white;
+}
+
+
+/*html_tags*/
+
+#html_tags{
+	width: 90%;
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	margin:0 5% 0  5% ;
+	box-shadow: 0 1px 1px 1px;
+	border-radius: 15px 15px 0 0;
+	background-color: rgba(220,220,150,0.8);
+}
+
+
+#html_tags ul{
+	margin: 0;
+	padding: 0;
+	height: 50px;
+}
+
+#html_tags li{
+	display: block;
+	float: left;
+	width: 12%;
+	margin:0;
+	padding: 0;
+	text-align: center;
+	border-right:solid 1px gray; 
+	/*box-shadow: 0 1px 0 1px;*/
+	/*border-right: solid 1px gray;*/
+}
+
+/*options*/
+
+#options{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 80px;
+	height: 100%;
+	/*background-color: rgba(220,220,150,0.8);*/
+}
+
+#options #save_button,
+#preview_button{
+	height: 60px;
+	width: 60px;
+	z-index: 0;
+	border-radius: 50%;
+	text-align: center;
+	margin:600px auto 0 auto;
+	background-color: rgb(150,200,120);
+	box-shadow: 0 1px 2px 1px;
+}
+
+#save_button p,
+#preview_button p{
+	padding: 5px 0 0 0 ;
+}
+
+#preview_button{
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	border-radius: 50%;
+	margin:0 auto ;
+	background-color: rgb(150,200,120);
+}
+
+
+/*menu*/
+
+#menu{
+	position: fixed;
+	right: -300px;
+	top:0;
+	width: 300px;
+	height: 100%;
+	background-color: rgba(250,200,100,0.7);
+	z-index: 10;
+}
+
+#menu span {
+	position: fixed;
+	height: 150px;
+	width: 20px;
+	top: 100px;
+	right: 0px;
+	text-align: center;
+	border:solid 1px gray;
+	/*box-shadow: 0 1px 0 1px;*/
+	background-color:rgba(250,200,100,0.8); 
+	z-index: 10;
+}
+
+
+#sub_menu{
+	position: fixed;
+	right: -300px;
+	top:0;
+	width: 300px;
+	height: 100%;
+	background-color: rgba(250,200,100,0.8);
+	z-index: 10;
+}
+
+#sub_menu span {
+	position: fixed;
+	height: 150px;
+	width: 20px;
+	top: 250px;
+	right: 0px;
+	text-align: center;
+	border:solid 1px gray;
+	/*box-shadow: 0 1px 0 1px;*/
+	background-color:rgba(250,200,100,0.7); 
+	z-index: 10;
+}
