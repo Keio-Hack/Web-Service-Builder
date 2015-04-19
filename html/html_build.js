@@ -1,35 +1,34 @@
 $(function(){
 
-	var click_count = 0,
-		pre_count = 0;
+	var pre_count = 0;
 
-	$("#menu").on("mouseover",function(){
+	$("#menu,#dash_board").on("mouseover",function(){
 
 		$(this).stop(true).animate({
 
-			right:0,
-			zIndex:5
+			right:0
 
 		},350);
 
-		$("#menu span").stop(true).animate({
+		$(this).find("span").stop(true).animate({
 
-			right:"300px"
-
-		},350);
-	
-	
-
-	})
-
-	.on('mouseout',function(){
-
-		$("#menu span").stop(true).animate({
-
-			right:0,
+			right:"300px",
 			zIndex:10
 
 		},350);
+	
+	
+
+	})
+
+	.on('mouseout',function(){
+
+		$(this).find("span").stop(true).animate({
+
+			right:0,
+			zIndex:1
+
+		},350);
 
 		$(this).stop(true).animate({
 
@@ -41,48 +40,13 @@ $(function(){
 
 
 
-	$("#sub_menu").on("mouseover",function(){
-
-		$(this).stop(true).animate({
-
-			right:0,
-			zIndex:5
-
-		},500);
-
-		$("#sub_menu span").stop(true).animate({
-
-			right:"300px"
-
-		},500);
 	
-	
-
-	})
-
-	.on('mouseout',function(){
-
-		$("#sub_menu span").stop(true).animate({
-
-			right:0,
-			zInsex:10
-
-		},500);
-
-		$(this).stop(true).animate({
-
-			right:"-300px"
-
-		},500);
-
-	});
-
 
 	$("#preview_button").on('click',function(){
 
 		if(pre_count===0){
 
-			$("#white_board,#save_button").animate({
+			$("#white_board,#save_button,#WAB_logo").animate({
 				opacity:"0"
 			},1000);
 	
@@ -93,7 +57,7 @@ $(function(){
 			pre_count=1;
 
 		}else{
-			$("#white_board,#save_button").animate({
+			$("#white_board,#save_button,#WAB_logo").animate({
 				opacity:"1"
 			},1000);
 	

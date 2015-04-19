@@ -46,7 +46,11 @@ header h1 #WAB_logo{
 }
 
 
-/*html_tags*/
+
+
+/*ここからhtml_tags*/
+
+
 
 #html_tags{
 	width: 90%;
@@ -78,14 +82,17 @@ header h1 #WAB_logo{
 	/*border-right: solid 1px gray;*/
 }
 
-/*options*/
+
+	/*ここまでhtml_tags*/
+
+	/*ここからoptions*/
 
 #options{
 	position: fixed;
 	left: 0;
-	top: 0;
+	bottom: 50px;
 	width: 80px;
-	height: 100%;
+	height: 120px;
 	/*background-color: rgba(220,220,150,0.8);*/
 }
 
@@ -96,7 +103,7 @@ header h1 #WAB_logo{
 	z-index: 0;
 	border-radius: 50%;
 	text-align: center;
-	margin:600px auto 0 auto;
+	margin:0  auto ;
 	background-color: rgb(150,200,120);
 	box-shadow: 0 1px 2px 1px;
 }
@@ -116,7 +123,9 @@ header h1 #WAB_logo{
 }
 
 
-/*menu*/
+	/*ここまでoptions*/
+
+	/*ここからmenu*/
 
 #menu{
 	position: fixed;
@@ -142,7 +151,12 @@ header h1 #WAB_logo{
 }
 
 
-#sub_menu{
+	/*ここまでmenu*/
+
+
+	/*ここからoptions*/
+
+#dash_board{
 	position: fixed;
 	right: -300px;
 	top:0;
@@ -152,7 +166,7 @@ header h1 #WAB_logo{
 	z-index: 10;
 }
 
-#sub_menu span {
+#dash_board span {
 	position: fixed;
 	height: 150px;
 	width: 20px;
@@ -163,4 +177,14 @@ header h1 #WAB_logo{
 	/*box-shadow: 0 1px 0 1px;*/
 	background-color:rgba(250,200,100,0.7); 
 	z-index: 10;
+}
+
+	/*ここまでoptions*/
+
+#user_dash_link{
+	height: 25px;
+	width: 250px;
+	float: left;
+	text-align: center;
+	margin: 20px 25px ;
 }
