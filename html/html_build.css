@@ -60,7 +60,7 @@ header h1 #WAB_logo{
 	bottom: 0;
 	margin:0 5% 0  5% ;
 	box-shadow: 0 1px 1px 1px;
-	border-radius: 15px 15px 0 0;
+	/*border-radius: 15px 15px 0 0;*/
 	background-color: rgba(220,220,150,1);
 }
 
@@ -74,12 +74,12 @@ header h1 #WAB_logo{
 #html_tags li{
 	display: block;
 	float: left;
-	width: 12%;
+	width: 12.5%;
 	margin:0;
 	padding: 0;
 	text-align: center;
-	border-right:solid 1px gray; 
-	/*box-shadow: 0 1px 0 1px;*/
+	/*border-right:solid 1px gray; */
+	box-shadow: 0 0 1px 0;
 	/*border-right: solid 1px gray;*/
 }
 

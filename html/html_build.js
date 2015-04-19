@@ -10,7 +10,7 @@ $(function(){
 
 		},350);
 
-		// $(this).find("span").css({opcity:0});
+		
 
 		$(this).find("span").stop(true).animate({
 
@@ -34,7 +34,7 @@ $(function(){
 
 		},350);
 
-		// $(this).find("#menu_logo").css({opcity:1});
+		
 
 		$(this).stop(true).animate({
 
@@ -98,15 +98,16 @@ $(function(){
 	});
 
 
-	// $("#user_dash_link").on('mouseover',function(){
 
-	// 	$(this).animate({
 
-			
 
-	// 	},300);
+	$(".menu_button").on('click',function(){
+		$(this).animate({
+			opacity:0.4
+		},200);
+	});
 
-	// });
+	
 
 	$(document).keydown(function(e) {
 	 
