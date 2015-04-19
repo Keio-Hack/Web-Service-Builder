@@ -10,10 +10,13 @@ $(function(){
 
 		},350);
 
+		// $(this).find("span").css({opcity:0});
+
 		$(this).find("span").stop(true).animate({
 
 			right:"300px",
-			zIndex:10
+			zIndex:10,
+			opacity:0
 
 		},350);
 	
@@ -26,9 +29,12 @@ $(function(){
 		$(this).find("span").stop(true).animate({
 
 			right:0,
-			zIndex:1
+			zIndex:1,
+			opacity:1
 
 		},350);
+
+		// $(this).find("#menu_logo").css({opcity:1});
 
 		$(this).stop(true).animate({
 
@@ -90,5 +96,16 @@ $(function(){
 		});
 
 	});
+
+
+	// $("#user_dash_link").on('mouseover',function(){
+
+	// 	$(this).animate({
+
+			
+
+	// 	},300);
+
+	// });
 
 });
