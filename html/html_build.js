@@ -8,7 +8,7 @@ $(function(){
 
 			right:0
 
-		},350);
+		},500,"swing");
 
 		
 
@@ -18,7 +18,7 @@ $(function(){
 			zIndex:10,
 			opacity:0
 
-		},350);
+		},500,"swing");
 	
 	
 
@@ -107,7 +107,7 @@ $(function(){
 		},200);
 	});
 
-	
+
 
 	$(document).keydown(function(e) {
 	 

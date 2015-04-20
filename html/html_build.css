@@ -60,7 +60,6 @@ header h1 #WAB_logo{
 	bottom: 0;
 	margin:0 5% 0  5% ;
 	box-shadow: 0 1px 1px 1px;
-	/*border-radius: 15px 15px 0 0;*/
 	background-color: rgba(220,220,150,1);
 }
 
@@ -78,9 +77,7 @@ header h1 #WAB_logo{
 	margin:0;
 	padding: 0;
 	text-align: center;
-	/*border-right:solid 1px gray; */
 	box-shadow: 0 0 1px 0;
-	/*border-right: solid 1px gray;*/
 }
 
 
@@ -91,10 +88,9 @@ header h1 #WAB_logo{
 #options{
 	position: fixed;
 	left: 0;
-	bottom: 50px;
+	bottom: 100px;
 	width: 80px;
 	height: 120px;
-	/*background-color: rgba(220,220,150,0.8);*/
 }
 
 #options #save_button,
@@ -166,15 +162,14 @@ header h1 #WAB_logo{
 	float: left;
 }
 
-#option_button{
+.option_button{
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
 	float: left;
-	background-color: orange;
-	box-shadow: 1px 2px 2px 0px;
-
+	margin: 10px 25px;
 }
+
 
 #keio_hack_link{
 	height: 50px;
@@ -211,7 +206,6 @@ header h1 #WAB_logo{
 	right: 0px;
 	text-align: center;
 	border:solid 1px gray;
-	/*box-shadow: 0 1px 0 1px;*/
 	background-color:rgba(250,200,100,0.9); 
 	z-index: 10;
 }
