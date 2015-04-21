@@ -2,31 +2,27 @@ $(function(){
 
 	var pre_count = 0;
 
-	$("#menu,#dash_board").on("mouseover",function(){
+	$("#menu").on("mouseover",function(){
 
-		$(this).stop(true).animate({
+		$(this).stop(true).delay(300).animate({
 
 			right:0
 
 		},500,"swing");
 
-		
-
 		$(this).find("span").stop(true).animate({
 
-			right:"300px",
+			right:"-20px",
 			zIndex:10,
 			opacity:0
 
-		},500,"swing");
+		},300,"swing");
 	
-	
-
 	})
 
 	.on('mouseout',function(){
 
-		$(this).find("span").stop(true).animate({
+		$(this).find("span").stop(true).delay(300).animate({
 
 			right:0,
 			zIndex:1,
@@ -40,7 +36,7 @@ $(function(){
 
 			right:"-300px"
 
-		},350);
+		},300);
 
 	});
 
@@ -58,7 +54,7 @@ $(function(){
 	
 			$("#html_tags").stop(true).animate({
 				bottom:"-40px"
-			},1000);
+			},300);
 	
 			pre_count=1;
 
@@ -69,7 +65,7 @@ $(function(){
 	
 			$("#html_tags").stop(true).animate({
 				bottom:0
-			},1000);
+			},300,"swing");
 	
 			pre_count=0;
 
@@ -101,7 +97,7 @@ $(function(){
 
 
 
-	$(".menu_button").on('click',function(){
+	$(".menu_button,.option_button,#keio_hack_link").on('click',function(){
 		$(this).animate({
 			opacity:0.4
 		},200);
@@ -131,5 +127,37 @@ $(function(){
 	    }
 	 
 	});
+
+
+	$("li").on('mouseover',function(){
+		$(this).stop(true).animate({
+			padding:"0 0 30px 0 ",
+			backgroundColor:"rgba(150,200,120,1)"
+		},300);
+
+		$(this).find("li").stop(true).animate({
+			padding:"10px 0 0 0 "
+			// backgroundColor:"rgba(150,200,120,1)"
+		},300);
+
+		$("#html_tags").stop(true).animate({
+			height:"50px",
+			// backgroundColor:"rgba(150,200,120,1)"
+		},300);
+	})
+	.on("mouseout",function(){
+
+		$(this).stop(true).animate({
+			padding:0,
+			backgroundColor:"rgba(150,200,120,0.3)"
+		},300)
+
+
+		$("#html_tags").stop(true).animate({
+			height:"30px",
+			// backgroundColor:"rgba(150,200,120,0.3)"
+		},300);
+
+	})
 
 });
