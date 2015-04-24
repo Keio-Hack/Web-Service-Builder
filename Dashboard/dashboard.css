@@ -1,0 +1,65 @@
+html,
+body{
+	width: 100%;
+	margin:0;
+	padding: 0;
+}
+
+main{
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+/*header*/
+
+header{
+	height: 50px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0 1px 1px 1px ;
+}
+
+.header_com{
+	float: left;
+	height: 50px;
+	width: 33.3333333333%;
+	background-color: rgba(100,250,100,1);
+}
+
+#hedaer_left p{
+	margin: 0 0 0 5px;
+	font-size: 34px;
+	font-weight: 800;
+	font-family: monospace;
+}
+
+#header_center p{
+	margin: 0;
+	text-align: center;
+	font-size: 34px;
+	font-family: monospace;
+}
+
+#header_right p{
+	margin:  7px 0;
+	text-align: right;
+	font-size: 20px;
+	font-weight: 800;
+	font-family: monospace;
+}
+
+/*/header*/
+
+#save_data{
+	width: 100%;
+	height: 100px;
+}
+
+.save_data_go{
+	width: 100%;
+	height: 50px;
+	background-color: blue;
+	margin: 50px 0;
+}

@@ -4,9 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Web Service Creator</title>
 	<link rel="stylesheet" href="html_build.css">
-  	<script src="jquery-1.11.2.min .js"></script>
+  	<!-- <script src="../js/jquery-1.11.2.min .js"></script> -->
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-	<script src="html_build.js"></script>
+	<script src="js/html_build.js"></script>
+	<script src ="js/klib_set_css.js"></script>
+	<script src="js/klib_auto_making_tags.js"></script>
+	<script src="js/klib_drag_and_drop.js"></script>
+	<script src="js/klib_saving_whiteboard.js"></script>
+	<!-- <script src="../js/jquery-ui-1.11.4"></script>	 -->
 </head>
 <body>
 
@@ -19,7 +25,7 @@
 
 	</header>	
 
-	<!-- header -->
+	<!-- /header -->
 
 
 	<!-- white_board -->
@@ -28,27 +34,29 @@
 	<div id="white_board"></div>
 
 
-	<!-- white_board -->
+	<!-- /white_board -->
 
 
 	<!-- html_tags -->
 
 	<div id="html_tags">
 		
-		<ul>
-			<li draggable="true">h</li>
+
+		<!-- この下にidを追加 -->
+		<ul id="parent_of_draggedbuttons">
+<!-- 			<li draggable="true">h</li>
 			<li draggable="true">p</li>
 			<li draggable="true">button</li>
 			<li draggable="true">iframe</li>
 			<li draggable="true">form</li>
 			<li draggable="true">table</li>
 			<li draggable="true">image</li>
-			<li draggable="true">aiueo</li>
+			<li draggable="true">aiueo</li> -->
 		</ul>
 
 	</div>
 
-	<!-- html_tags -->
+	<!-- /html_tags -->
 
 
 	<!-- css tags -->
@@ -56,7 +64,7 @@
 	<div id="css_tags"></div>
 
 
-	<!-- css_tags -->
+	<!-- /css_tags -->
 
 
 	<!-- menu -->
@@ -123,21 +131,21 @@
 			
 	</div>
 
-	<!-- menu -->
+	<!-- /menu -->
 
 
 	<!-- dash_board -->
 
-
+<!-- 下のdash-boardの中にformを追加 -->
 	<div id="dash_board">
-		
-		
-
-
+		<ul>
+			<form action="wab_build.html" accept-charset="utf-8" name="set_css">
+			</form>
+		</ul>
 	</div>
 
 
-	<!-- dash_board -->
+	<!-- /dash_board -->
 
 
 	<!-- options -->

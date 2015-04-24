@@ -40,6 +40,7 @@ header h1 {
 header h1 #WAB_logo{
 	display: block;
 	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
 	background-color:#00BFFF;
 	box-shadow: 0 1px 1px 1px;
 	border-radius:50% 0 0 0 ;
@@ -66,6 +67,7 @@ header h1 #WAB_logo{
 	position: fixed;
 	bottom: 0;
 	margin:0 5% 0  5% ;
+	border-radius: 5%;
 	box-shadow: 0 1px 1px 1px;
 	background-color: rgba(200,250,170,0.3);
 }
@@ -91,6 +93,15 @@ header h1 #WAB_logo{
 	background-color: rgba(150,200,120,0.3);
 }
 
+/*このした、林が追加*/
+#html_tags li p{
+	margin : 0px;
+}
+
+.cursored_object_on_whiteboard{
+	border : 1px gray dotted;
+}
+/*ここまで林が追加*/
 
 	/*ここまでhtml_tags*/
 

@@ -2,7 +2,7 @@ $(function(){
 
 	var pre_count = 0;
 
-	$("#menu").on("mouseover",function(){
+	$("#menu").on("mouseover",function(){ //dash_boradを対象から外しましたby林
 
 		$(this).stop(true).delay(300).animate({
 
